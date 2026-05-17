@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mimi 🐱 — Cat Profile & Microchip Lookup | ملف القطة ميمي</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- ── HERO ──────────────────────────────────── -->
+<section class="hero">
+  <nav class="nav">
+    <span class="nav-brand" id="navBrand">🐾 Mimi's World</span>
+    <div class="nav-right">
+      <a href="#chip-lookup" class="nav-chip" id="navChip">🔍 Microchip Lookup</a>
+      <!-- Language Toggle -->
+      <div class="lang-toggle">
+        <button class="lang-opt active" id="btnEN" onclick="setLang('en')">EN</button>
+        <button class="lang-opt" id="btnAR" onclick="setLang('ar')">عربي</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile photo -->
+  <div class="photo-ring">
+    <img id="catPhotoImg" class="cat-photo" src="/FrontImg_20250105235235818.jpg" alt="Mimi" >
+    </div>
+  
+  <h1 id="heroTitle">Hello, I'm <em>Mimi</em> 🐱</h1>
+  <div class="badge-row">
+    <span class="badge">🎂 <span id="badgeAge" contenteditable="false">4 Years Old</span></span>
+    <span class="badge">🏠 <span id="badgeLife" contenteditable="false">Indoor Cat</span></span>
+    <span class="badge green" id="badgeChip">💉 Microchipped</span>
+    <span class="badge green">✂️ <span id="badgeFixed" contenteditable="false">Spayed</span></span>
+  </div>
+</section>
+
+
+<!-- ── ABOUT ──────────────────────────────────── -->
+<section class="section">
+  <p class="section-label" id="labelAbout">About Mimi</p>
+  <div class="story-card">
+    <pre class="story-text" id="storyText" contenteditable="false">
+If you find our cat Mimi lost, please contact us at the number below.
+ Friendly , Loves seafood, Microchipped
+.إذا حصلتوا قطوتنا ميمي، الرجاء التواصل على الرقم الموضح بالأسفل
+
+ أليفة و معقمة
+ تحب الأكل البحري
+ فيها شريحة
+    </pre>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-icon">🎨</div>
+      <div class="card-label" id="labelColor">Color</div>
+      <div class="card-value" id="valColor" contenteditable="false">Gray / رمادي</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">👀</div>
+      <div class="card-label" id="labelEyes">Eye Color</div>
+      <div class="card-value" id="valEyes" contenteditable="false">Gold / ذهبي</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">💉</div>
+      <div class="card-label" id="labelVaccine">Vaccinated</div>
+      <div class="card-value" id="valVaccine" contenteditable="false">Yes / نعم </div>
+    </div>
+  </div>
+
+  <div class="paw-divider">🐾 🐾 🐾</div>
+</section>
+
+<!-- ── MICROCHIP LOOKUP ───────────────────────── -->
+<div class="chip-wrap" id="chip-lookup">
+  <div class="chip-section">
+    <p class="section-label" id="labelChipSec">🔍 Microchip Registry</p>
+    <h2 id="chipTitle"> Search by Microchip Id</h2>
+
+    <div class="chip-badge" id="chipBadge">Mimi's chip: 900263005326577</div>
+
+    <div class="search-result" id="searchResult">
+      <div class="result-header">
+        <span class="result-icon" id="resultIcon"></span>
+        <div>
+          <div class="result-title" id="resultTitle"></div>
+          <div class="result-sub" id="resultSub"></div>
+        </div>
+      </div>
+      <div class="result-grid" id="resultGrid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── CONTACT ─────────────────────────────────── -->
+<section class="contact-section">
+  <div class="section">
+    <p class="section-label" id="labelContact">If you found Mimi</p>
+    <h2 class="section-title" id="titleContact" style="margin-bottom:1.4rem">Contact the Owner</h2>
+
+    <div class="contact-grid" id="contactGrid">
+      <a class="contact-card" href="#" id="phoneCard">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-label" id="cLabelPhone">Phone / WhatsApp</div>
+          <div class="contact-value" id="cValPhone" contenteditable="false" onclick="event.preventDefault()">+966 503934683</div>
+        </div>
+      </a>
+      <a class="contact-card" href="#" id="emailCard">
+        <div class="contact-icon">📧</div>
+        <div>
+          <div class="contact-label" id="cLabelEmail">Email</div>
+          <div class="contact-value" id="cValEmail" contenteditable="false" onclick="event.preventDefault()">mimi_contact011@gmail.com</div>
+        </div>
+      </a>
+      <div class="contact-card">
+        <div class="contact-icon">🏠</div>
+        <div>
+          <div class="contact-label" id="cLabelArea">General Area</div>
+          <div class="contact-value" id="cValArea" contenteditable="false">Jubail, KSA</div>
+        </div>
+      </div>
+    </div>
+
+   
+</section>
+
+<!-- ── FOOTER ──────────────────────────────────── -->
+<footer>
+  Made with ❤️ for <strong>Mimi</strong> 🐾 · Microchip: <strong>900263005326577</strong>
+</footer>
+
+<script>
+/* ══════════════════════════════════════════════
+   TRANSLATIONS
+══════════════════════════════════════════════ */
+const T = {
+  en: {
+    title: "Mimi 🐱 — Cat Profile & Microchip Lookup",
+    navBrand: "🐾 Mimi's World",
+    navChip: "🔍 Microchip Lookup",
+    heroTitle: "Hello, I'm <em>Mimi</em> 🐱",
+     badgeFixed: "✂️ Spayed",
+     badgeLife: "🏠 Indoor Cat",
+    badgeAge: "🎂 4 Years Old",
+    badgeChip: "💉 Microchipped",
+    labelAbout: "About Mimi",
+    labelColor: "Color",
+    labelEyes: "Eye Color",
+    labelVaccine: "Vaccinated",
+    labelContact: "If you found Mimi",
+    titleContact: "Contact the Owner",
+    cLabelPhone: "Phone / WhatsApp",
+    cLabelEmail: "Email",
+    cLabelArea: "General Area",
+    
+  },
+  ar: {
+    title: "ميمي 🐱 — ملف القطة والبحث بالشريحة",
+    navBrand: "🐾 عالم ميمي",
+    navChip: "🔍 البحث بالشريحة",
+    heroTitle: "مرحباً، أنا <em>ميمي</em> 🐱",
+     badgeFixed: "✂️ معقمه",
+     badgeLife: "🏠 قطة منزلية",
+    badgeAge: "🎂 عمر 4 سنوات",
+    badgeChip: "💉 مزروع شريحة",
+    labelAbout: "عن ميمي",
+    labelColor: "اللون",
+    labelEyes: "لون العيون",
+    labelVaccine: "التطعيم",
+    labelContact: "إذا وجدتِ ميمي",
+    titleContact: "تواصل مع المالك",
+    cLabelPhone: "الهاتف / واتساب",
+    cLabelEmail: "البريد الإلكتروني",
+    cLabelArea: "المنطقة العامة",
+   
+  }
+};
+
+let currentLang = localStorage.getItem('mimiLang') || 'en';
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('mimiLang', lang);
+
+  const html = document.documentElement;
+  html.lang = lang;
+  html.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+  document.getElementById('btnEN').classList.toggle('active', lang === 'en');
+  document.getElementById('btnAR').classList.toggle('active', lang === 'ar');
+
+  const t = T[lang];
+  document.title = t.title;
+
+  const ids = [
+    'navBrand',
+    'navChip',
+    'badgeAge',
+    'badgeFixed',
+    'badgeLife',
+    'badgeChip',
+    'labelAbout',
+    'labelColor',
+    'labelEyes',
+    'labelVaccine',
+    'labelContact',
+    'titleContact',
+    'cLabelPhone',
+    'cLabelEmail',
+    'cLabelArea',
+    'rewardNote'
+  ];
+
+  ids.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && t[id] !== undefined) {
+      el.textContent = t[id];
+    }
+  });
+
+  document.getElementById('heroTitle').innerHTML = t.heroTitle;
+}
+
+/* ══════════════════════════════════════════════
+   INIT
+══════════════════════════════════════════════ */
+setLang(currentLang);
+</script>
+</body>
+</html>
