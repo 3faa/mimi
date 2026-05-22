@@ -51,15 +51,16 @@ Mimi 🐱 | Microchip 900263005326577 | Lost Cat
 <section class="section">
   <p class="section-label" id="labelAbout">About Mimi</p>
   <div class="story-card">
-    <pre class="story-text" id="storyText" contenteditable="false">
+    <p class="story-text" id="storyText" contenteditable="false">
 If you find our cat Mimi lost, please contact us at the number below.
- Friendly , Loves seafood, Microchipped
+ Friendly , Loves seafood, Microchipped<br><br><br>
+      
 .إذا حصلتوا قطوتنا ميمي، الرجاء التواصل على الرقم الموضح بالأسفل
 
  أليفة و معقمة
  تحب الأكل البحري
  فيها شريحة
-    </pre>
+    </p>
   </div>
 
   <div class="cards-grid">
@@ -104,7 +105,6 @@ If you find our cat Mimi lost, please contact us at the number below.
   </div>
 </div>
 
-<!-- ── CONTACT ─────────────────────────────────── -->
 <section class="contact-section">
   <div class="section">
     <p class="section-label" id="labelContact">If you found Mimi</p>
@@ -115,21 +115,21 @@ If you find our cat Mimi lost, please contact us at the number below.
         <div class="contact-icon">📞</div>
         <div>
           <div class="contact-label" id="cLabelPhone">Phone / WhatsApp</div>
-          <div class="contact-value" id="cValPhone" contenteditable="false" onclick="event.preventDefault()">+966 503934683</div>
+          <div class="contact-value" id="cValPhone" contenteditable="false" ">+966 503934683</div>
         </div>
       </a>
       <a class="contact-card" href="#" id="emailCard">
         <div class="contact-icon">📧</div>
         <div>
           <div class="contact-label" id="cLabelEmail">Email</div>
-          <div class="contact-value" id="cValEmail" contenteditable="false" onclick="event.preventDefault()">mimi_contact011@gmail.com</div>
+          <div class="contact-value" id="cValEmail" contenteditable="false" ">ofarisk@gmail.com</div>
         </div>
       </a>
       <div class="contact-card">
         <div class="contact-icon">🏠</div>
         <div>
           <div class="contact-label" id="cLabelArea">General Area</div>
-          <div class="contact-value" id="cValArea" contenteditable="false">Jubail, KSA</div>
+          <div class="contact-value" id="cValArea" contenteditable="false">Jubail, KSA / الجبيل , السعودية</div>
         </div>
       </div>
     </div>
@@ -137,15 +137,13 @@ If you find our cat Mimi lost, please contact us at the number below.
    
 </section>
 
-<!-- ── FOOTER ──────────────────────────────────── -->
+
 <footer>
   Made with ❤️ for <strong>Mimi</strong> 🐾 · Microchip: <strong>900263005326577</strong>
 </footer>
 
 <script>
-/* ══════════════════════════════════════════════
-   TRANSLATIONS
-══════════════════════════════════════════════ */
+
 const T = {
   en: {
     title: "Mimi 🐱 — Cat Profile & Microchip Lookup",
@@ -234,9 +232,7 @@ function setLang(lang) {
   document.getElementById('heroTitle').innerHTML = t.heroTitle;
 }
 
-/* ══════════════════════════════════════════════
-   INIT
-══════════════════════════════════════════════ */
+
 setLang(currentLang);
 </script>
 </body>
