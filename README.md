@@ -18,4 +18,4 @@ A bilingual lost cat profile website for Mimi.
 Faris
 
 ## Contact
-Email: mimi_contact011@gmail.com
+Email: ofarisk@gmail.com
